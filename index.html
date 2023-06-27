@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAROQUE-1.0</title>
+    <script src="https://kit.fontawesome.com/c2b7ad48ec.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container1 {
+            background-image: url(https://cdn.shopify.com/s/files/1/2277/5269/files/main_slider_desktop_e7ca22a2-9fef-4375-a9e5-3b9ba7db78e4_1500x.jpg?v=1666852862);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .marque {
+            background: #000;
+            color: white;
+            height: 40px;
+            padding: 5px auto;
+            display: flex;
+            align-items: center;
+        }
+
+
+
+        .menue {
+            display: flex;
+            padding: 12px 57px;
+            justify-content: center;
+            /* justify-items: center; */
+            text-align: center;
+        }
+
+        #nav {
+            width: 100%;
+            /* text-align: center; */
+        }
+
+        .lm {
+            line-height: 6px;
+            text-align: left;
+            justify-content: center;
+        }
+
+        .rm {
+            text-align: right;
+        }
+
+        .mm {
+            text-align: center;
+        }
+
+        .confoot {
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        button {
+            width: 150px;
+            height: 45px;
+            color: white;
+            background: #000;
+
+        }
+
+        h3 {
+            font-weight: lighter;
+        }
+
+        #container2 {
+            display: grid;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            /* width: 100vw;
+            height: 100vh; */
+            grid-gap: 25px;
+            margin: 40px 150px;
+
+        }
+
+        button {
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background: #fb99b5;
+            transition: .5s;
+            color: black;
+            border: none;
+            /* font-size: 15px; */
+            font-style: oblique;
+        }
+
+        .boxs {
+            /* width: 360px;
+            height: 559.89px; */
+            text-align: center;
+            font-size: 2vh;
+            margin: 10px 0px;
+        }
+
+        .boxs img {
+            width: 100%;
+            padding: 0 auto;
+            cursor: pointer;
+        }
+
+
+
+
+        .boxs a {
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+            margin: 3px 0;
+        }
+
+        .container3 {
+            display: flex;
+            margin: 40px 150px;
+        }
+
+        .breastcancer {
+            width: 100%;
+        }
+
+        .breastcancer img {
+            width: 100%;
+            height: 100%;
+            /* border: 5px solid red; */
+        }
+
+        .bform {
+            width: 100%;
+            background: #ecacbf;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            /* height: auto; */
+        }
+
+        .form input {
+            height: 27px;
+            width: 224px;
+        }
+
+        .form button {
+            height: 30px;
+            /* border: 2px solid black; */
+        }
+
+        #ranpadding {
+            padding: 10px;
+        }
+
+        #menuepadding {
+            padding: 5px;
+        }
+
+        .btittle h4 {
+            font-weight: lighter;
+        }
+
+        .container4 {
+            height: 200px;
+            background: #f6f6f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .foot {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto 0px;
+            /* margin: auto 5px; */
+        }
+
+        .d1 a {
+            /* display: flex;
+            justify-content: center;
+            text-align: center; */
+            /* width: 100%; */
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #998d8e;
+            font-weight: lighter;
+            font-size: small;
+
+        }
+
+        .d2 a {
+            /* display: flex;
+            justify-content: center;
+            text-align: center; */
+            /* width: 100%; */
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #998d8e;
+            font-weight: lighter;
+            font-size: small;
+
+        }
+
+        .d1,
+        .d2 {
+            color: #998d8e;
+            margin: 5px auto;
+        }
+
+        .d3 {
+            padding-top: 10px;
+        }
+
+        a {
+            color: #121212;
+
+        }
+
+        /* ul {
+            display: flex;
+            margin: 10px 240px;
+            text-decoration: none;
+
+
+        }
+
+        ul li {
+            margin: 10px;
+            width: auto;
+            list-style: none;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            width: 300px;
+            color: #8b8b8b;
+            font-size: 12px;
+
+        } */
+
+        .container5 {
+            background: #000;
+            color: white;
+            height: 50px;
+            padding: 5px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container5 h3 {
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        .fa-solid,
+        .fa-regular,
+        .fa-brands {
+            font-size: 25px;
+        }
+
+        .help {
+            position: fixed;
+            /* top: 564px; */
+            right: 27px;
+            bottom:3.5vh;
+        }
+
+        .help button {
+            border-radius: 50px;
+            /* padding: 0 7px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 113px;
+        }
+
+        .help h3 {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marque">
+        <marquee behavior="" direction="right">FREE SHIPPING IN PAKISTAN</marquee>
+    </div>
+    <div id="container1">
+        <div class="menue">
+            <div class="lm" id="nav"> <a href=""><i id="ranpadding" class="fa-solid fa-bars"></i></a>
+                <h3 style="display: inline;">MENU</h3>
+            </div>
+            <div class="mm" id="nav"><a href=""><img src="logo.png" alt=""></a></div>
+
+            <div class="rm" id="nav">
+                <a href="#"><i id="menuepadding" class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i id="menuepadding" class="fa-regular fa-heart"></i></a>
+                <a href="#"><i id="menuepadding" class="fa-regular fa-user"></i></a>
+                <a href="#"><i id="menuepadding" class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+        <div class="confoot"><button>
+                <h3>SHOP NOW</h3>
+            </button></div>
+    </div>
+
+    <div id="container2">
+        <div class="boxs" id="b1">
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/677.jpg?v=1666853257" alt="">
+            <h2 id="ranpadding">UNSTITCHED</h2>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="boxs" id="b2">
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/g_88d33f5c-80c4-4c8d-9ae3-53c3aeaf34dd.jpg?v=1666854733"
+                alt="">
+            <h2 id="ranpadding">DUPATTAS</h2>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="boxs" id="b3">
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/11_20332457-55a4-41e8-8164-b26fc5d8d277.jpg?v=1666853475"
+                alt="">
+            <h2 id="ranpadding">READY TO WEAR</h2>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="boxs">
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/fg_508cff4d-40ab-4743-b28b-cfebf13cc9ab.jpg?v=1654861435"
+                alt="">
+            <h2 id="ranpadding">CHANTELLE FORMALS</h2>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="boxs">
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/banner_bc20ba87-12c8-4d94-9e8c-007f885dcc3d.jpg?v=1639996999"
+                alt="">
+            <h2 id="ranpadding">BOTTOMS</h2>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="boxs">
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/FF_6ad30586-40fc-4210-8a9d-5137f2ad3554.jpg?v=1666853812"
+                alt="">
+            <h2 id="ranpadding">VELVET SHAWL</h2>
+            <a href="#">SHOP NOW</a>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="breastcancer">
+            <!-- <div class="title">HAVE YOU HAD YOUR MAMMOGRAM THIS YEAR?</div> -->
+            <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/Style_Banner_-_1_3041c6bd-0d7e-4980-bd3b-3153d63c2e7e_750x.jpg?v=1665143984"
+                alt="">
+        </div>
+        <div class="bform">
+            <div class="bheader" id="ranpadding">
+                <h1>GET 5% OFF</h1>
+            </div>
+            <div class="btittle" id="ranpadding">
+                <h4>SIGN UP NOW TO OUR NEWSLETTER</h4>
+            </div>
+            <div class="form" id="ranpadding">
+                <input type="email"><button>SIGN ME UP</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="foot">
+            <div class="d1">
+
+                <a href="#">WHO WE ARE</a> |
+                <a href="#">CONTACT US</a> |
+                <a href="#">OUR RESPONSIBILITY</a> |
+                <a href="#">EXCHANGE & REFUND</a> |
+                <a href="#">EXCHANGE FORM</a> |
+                <a href="#">SHIPPING</a> |
+                <a href="#">LOOK BOOK</a> |
+
+            </div>
+            <div class="d2">
+
+                <a href="#">TRACK YOUR ORDER</a> |
+                <a href="#">ORDER CANCELLATION FORM</a> |
+                <a href="#">CUSTOMISED STITCHING</a> |
+                <a href="#">CAREERS</a> |
+                <a href="#">LEGAL</a> |
+                <a href="#">FAQ's</a>
+            </div>
+            <div class="d3">
+                <a target="_blank" href="https://www.facebook.com/zuraizkhan111/"><i id="ranpadding"
+                        class="fa-brands fa-facebook"></i></a>
+                <a target="_blank"
+                    href="https://www.instagram.com/zuraizkhanlahore/?fbclid=IwAR3zBG3YBBCysvQ7bGyq42bFetkt86DLa8dEFbHmhmE6I4eIRB4i3Z35QXc"><i
+                        id="ranpadding" class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.tiktok.com/@thezuraiz"><i id="ranpadding"
+                        class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container5">
+        <a href="schoolwebsite.html" target="_blank">
+            <h3 style="color: white;">ALL RIGHT RESERVED TO Bilal Shahzad 2022</h3>
+        </a>
+    </div>
+    <div class="help">
+        <button><i id="ranpadding" class="fa-regular fa-circle-question"></i>
+            <h3>HELP</h3>
+        </button>
+    </div>
+
+</body>
+
+</html>
